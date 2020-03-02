@@ -1,0 +1,13 @@
+﻿@model IEnumerable<System.Security.Claims.Claim>
+@using System.Security.Claims
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+@foreach (Claim claim in Model)
+{
+    <div>$"{@claim.Type} : {@claim.Value}"</div>
+}

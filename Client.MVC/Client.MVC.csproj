@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>dc5cdf97-d852-4a96-8fdd-44cc0d32faab</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Configurations>Debug;Release;Test</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dockerfile" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
+
+  </ItemGroup>
+
+
+</Project>
